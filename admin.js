@@ -1,6 +1,6 @@
 function addCampaign() {
   if (title.value === "") {
-    alert("Nama program tidak boleh kosong");
+    alert("Nama program gaboleh kosong");
     return;
   }
 
@@ -38,3 +38,4 @@ function renderAdmin() {
 }
 
 renderAdmin();
+
