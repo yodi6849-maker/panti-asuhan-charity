@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panti Asuhan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Dashboard Admin Panti Asuhan</h2>
+
+<div class="admin-form">
+  <input type="text" id="title" placeholder="Nama Program">
+  <select id="category">
+    <option value="pendidikan">Pendidikan</option>
+    <option value="kesehatan">Kesehatan</option>
+    <option value="bencana">Darurat / Renovasi</option>
+  </select>
+  <button onclick="addCampaign()">Tambah Program</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nama Program</th>
+      <th>Kategori</th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+  <tbody id="adminCampaignList"></tbody>
+</table>
+
+<script src="js/data.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

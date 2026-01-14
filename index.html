@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PantiAsuhConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">PantiAsuhConnect</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#campaign">Program</a></li>
+    <li><a href="#donation">Donasi</a></li>
+    <li><a href="#volunteer">Relawan</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="admin.html" class="admin-btn">Admin</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <h1>Peduli & Berbagi Bersama Panti Asuhan</h1>
+  <p>Bersama kita bantu pendidikan dan kesejahteraan anak-anak panti asuhan.</p>
+
+  <div class="stats">
+    <div class="stat-card">
+      <h3>Total Donasi</h3>
+      <span id="totalDonasi">Rp 0</span>
+    </div>
+    <div class="stat-card">
+      <h3>Total Program</h3>
+      <span id="totalKampanye">0</span>
+    </div>
+  </div>
+</section>
+
+<section id="campaign" class="section">
+  <h2>Program Panti Asuhan</h2>
+
+  <select id="filterKategori">
+    <option value="all">Semua Program</option>
+    <option value="pendidikan">Pendidikan</option>
+    <option value="kesehatan">Kesehatan</option>
+    <option value="bencana">Darurat / Renovasi</option>
+  </select>
+
+  <div id="campaignList" class="campaign-grid"></div>
+</section>
+
+<section id="donation" class="section light">
+  <h2>Donasi untuk Anak Panti Asuhan</h2>
+
+  <div class="form-card">
+    <input type="text" id="donorName" placeholder="Nama Donatur">
+
+    <input type="number" id="donationAmount" placeholder="Nominal Donasi (Rp)">
+
+    <select id="paymentMethod">
+      <option value="">Pilih Metode Pembayaran</option>
+      <option value="Transfer Bank">Transfer Bank</option>
+      <option value="E-Wallet">E-Wallet (OVO / Dana / GoPay)</option>
+      <option value="Tunai">Tunai (Datang ke Panti)</option>
+    </select>
+
+    <button onclick="submitDonation()">Donasi Sekarang</button>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <h3 class="sub-title">Daftar Donatur</h3>
+  <ul id="donationList" class="data-list"></ul>
+</section>
+
+
+  
+
+<section id="volunteer" class="section">
+  <h2>Pendaftaran Relawan</h2>
+  <h3 class="sub-title">Daftar Relawan</h3>
+<ul id="volunteerList" class="data-list"></ul>
+
+
+  <div class="form-card">
+    <input type="text" id="volName" placeholder="Nama Lengkap">
+    <input type="email" id="volEmail" placeholder="Email">
+    <button onclick="registerVolunteer()">Daftar Relawan</button>
+  </div>
+</section>
+
+<section id="about" class="section light">
+  <h2>Tentang PantiAsuhConnect</h2>
+  <p>
+    PantiAsuhConnect adalah aplikasi web berbasis client-side
+    yang bertujuan membantu panti asuhan dalam mengelola informasi
+    program bantuan, simulasi donasi, dan pendaftaran relawan secara digital.
+  </p>
+  <section id="contact" class="section">
+  <h2>Contact Person</h2>
+
+  <div class="contact-card">
+    <p><strong>📞 WhatsApp:</strong> 0812-3456-7890</p>
+    <p><strong>📧 Email:</strong> panti.asuhan@gmail.com</p>
+    <p><strong>📍 Alamat:</strong> Jl. Kasih Sayang No. 10, Denpasar</p>
+  </div>
+</section>
+
+</section>
+
+<footer>
+  <p>© 2026 PantiAsuhConnect | Web Charity Panti Asuhan</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/donation.js"></script>
+<script src="js/volunteer.js"></script>
+</body>
+</html>
